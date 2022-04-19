@@ -9,6 +9,8 @@
     <style type="text/css">
         .auto-style1 {
             width: 100%;
+            height: 472px;
+            margin-left: 0px;
         }
         .auto-style2 {
             text-align: center;
@@ -61,6 +63,7 @@
         .auto-style14 {
             width: 1242px;
             text-align: center;
+            margin-top: 3px;
         }
         .auto-style15 {
             width: 103%;
@@ -78,6 +81,21 @@
             height: 23px;
             width: 151px;
             text-align: center;
+        }
+        .auto-style19 {
+            width: 110px;
+            height: 26px;
+        }
+        .auto-style20 {
+            width: 470px;
+            height: 26px;
+        }
+        .auto-style21 {
+            width: 169px;
+            height: 26px;
+        }
+        .auto-style22 {
+            height: 26px;
         }
     </style>
 </head>
@@ -148,7 +166,7 @@
                 <td class="auto-style3">
                     &nbsp;</td>
                 <td class="auto-style3">
-                    <asp:Label ID="FName0" runat="server" Font-Names="Arial" Font-Size="Medium" ForeColor="Black" Text="Last Name"></asp:Label>
+                    <asp:Label ID="LName" runat="server" Font-Names="Arial" Font-Size="Medium" ForeColor="Black" Text="Last Name"></asp:Label>
                 </td>
                 <td class="auto-style7">
                     <asp:TextBox ID="txtLname" runat="server" Font-Names="Arial" Font-Size="Medium" ForeColor="#0000CC"></asp:TextBox>
@@ -266,7 +284,7 @@
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtpassword" ErrorMessage="A Required Field!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                 </td>
                 <td>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="txtpassword" ErrorMessage="should be at least 8 Charachters!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000" ValidationExpression="\w{8,}"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="txtpassword" ErrorMessage="Invalid Password!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000" ValidationExpression="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@$&amp;?#*.])[A-Za-z0-9!@$&amp;?#*.]{8,15}"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -292,14 +310,14 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style7">&nbsp;</td>
-                <td class="auto-style9">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style19"></td>
+                <td class="auto-style19"></td>
+                <td class="auto-style19"></td>
+                <td class="auto-style19"></td>
+                <td class="auto-style19"></td>
+                <td class="auto-style20"></td>
+                <td class="auto-style21"></td>
+                <td class="auto-style22"></td>
             </tr>
             <tr>
                 <td class="auto-style3">
@@ -311,9 +329,11 @@
                 <td class="auto-style3">
                     &nbsp;</td>
                 <td class="auto-style3">
-                    <asp:Button ID="Button1" runat="server" BorderColor="#000066" Font-Names="Arial Black" Font-Size="Medium" ForeColor="Black" Text="Login" />
+                    <asp:Button ID="BtnLogin" runat="server" BorderColor="#000066" Font-Names="Arial Black" Font-Size="Medium" ForeColor="Black" Text="Login" OnClick="BtnLogin_Click" />
                 </td>
-                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style7">
+                    <asp:Label ID="LblMsg" runat="server" Font-Names="Georgia" Text="Label"></asp:Label>
+                </td>
                 <td class="auto-style9">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>

@@ -68,6 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Data\weddingDatabase.mdf" />
+    <Content Include="App_Data\weddingDatabase_log.ldf">
+      <DependentUpon>weddingDatabase.mdf</DependentUpon>
+    </Content>
     <Content Include="Images\1.jpg" />
     <Content Include="Images\3.jpg" />
     <Content Include="Images\2.jpg" />
@@ -97,6 +101,7 @@
     <Content Include="Images\wedlogo4.jpg" />
     <Content Include="index.html" />
     <Content Include="main.aspx" />
+    <Content Include="services.aspx" />
     <Content Include="signin.aspx" />
     <Content Include="signup.aspx" />
     <Content Include="Web.config" />
@@ -117,6 +122,13 @@
       <DependentUpon>main.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="services.aspx.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="services.aspx.designer.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+    </Compile>
     <Compile Include="signin.aspx.cs">
       <DependentUpon>signin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
