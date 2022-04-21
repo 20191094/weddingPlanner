@@ -72,22 +72,34 @@
     <Content Include="App_Data\weddingDatabase_log.ldf">
       <DependentUpon>weddingDatabase.mdf</DependentUpon>
     </Content>
+    <Content Include="buffet.aspx" />
+    <Content Include="Hall.aspx" />
     <Content Include="Images\1.jpg" />
     <Content Include="Images\3.jpg" />
     <Content Include="Images\2.jpg" />
     <Content Include="Images\4.jpg" />
     <Content Include="Images\5.jpg" />
+    <Content Include="Images\buffet.jpg" />
+    <Content Include="Images\cake.jpg" />
+    <Content Include="Images\dress.jpg" />
     <Content Include="Images\face.jpg" />
+    <Content Include="Images\guest.jpg" />
     <Content Include="Images\insta.jpg" />
+    <Content Include="Images\invitation.jpg" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Images\logo2.jpg" />
+    <Content Include="Images\makeup.jpg" />
+    <Content Include="Images\music.jpg" />
+    <Content Include="Images\photographer.jpg" />
     <Content Include="Images\snap.jpg" />
+    <Content Include="Images\suits.jpg" />
     <Content Include="Images\trend.jpg" />
     <Content Include="Images\trend2.jpg" />
     <Content Include="Images\trend3.jpg" />
     <Content Include="Images\trend4.jpg" />
     <Content Include="Images\trend5.jpg" />
     <Content Include="Images\twitter.jpg" />
+    <Content Include="Images\video.jpg" />
     <Content Include="Images\wed1.jpg" />
     <Content Include="Images\wed2.jpg" />
     <Content Include="Images\wed3.jpg" />
@@ -97,14 +109,19 @@
     <Content Include="Images\wed7.jpg" />
     <Content Include="Images\wed8.jpg" />
     <Content Include="Images\wed9.jpg" />
+    <Content Include="Images\wedhall.jpg" />
+    <Content Include="Images\wedhall1.jpg" />
     <Content Include="Images\wedlogo.jpg" />
     <Content Include="Images\wedlogo4.jpg" />
+    <Content Include="Images\wedStyle.jpg" />
     <Content Include="index.html" />
+    <Content Include="invitation.aspx" />
     <Content Include="main.aspx" />
     <Content Include="services.aspx" />
     <Content Include="signin.aspx" />
     <Content Include="signup.aspx" />
     <Content Include="Web.config" />
+    <Content Include="weddingStyle.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -113,6 +130,27 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buffet.aspx.cs">
+      <DependentUpon>buffet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buffet.aspx.designer.cs">
+      <DependentUpon>buffet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hall.aspx.cs">
+      <DependentUpon>Hall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hall.aspx.designer.cs">
+      <DependentUpon>Hall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="invitation.aspx.cs">
+      <DependentUpon>invitation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="invitation.aspx.designer.cs">
+      <DependentUpon>invitation.aspx</DependentUpon>
     </Compile>
     <Compile Include="main.aspx.cs">
       <DependentUpon>main.aspx</DependentUpon>
@@ -142,6 +180,13 @@
     </Compile>
     <Compile Include="signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="weddingStyle.aspx.cs">
+      <DependentUpon>weddingStyle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="weddingStyle.aspx.designer.cs">
+      <DependentUpon>weddingStyle.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
