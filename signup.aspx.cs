@@ -18,22 +18,36 @@ namespace wedding_planner
         protected void BtnLogin_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection();
-           //connecting to database
+            //connecting to database
             conn.ConnectionString = "Data Source =(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|weddingDatabase.mdf;Integrated Security=True";
             //inserting into database
             string strinsert = String.Format("INSERT INTO Customers VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')", txtFname.Text, txtLname.Text, txtEmail.Text, txtPhonenumber.Text, dblCountry.SelectedValue, txtusername.Text, txtpassword.Text, txtpasswordconfirm.Text);
             //create SQl command
             SqlCommand cmdinsert = new SqlCommand(strinsert, conn);
-            //open database
-            conn.Open();
-            //excute sqlcommand
+            try
+            {
+                //open database
+                conn.Open();
+                //excute sqlcommand
 
-            cmdinsert.ExecuteNonQuery();
+                cmdinsert.ExecuteNonQuery();
 
-            // close the database
-            conn.Close();
+                // close the database
+                conn.Close();
 
-            LblMsg.Text = "Congratulation " + txtFname.Text + " on starting your new chapter of life!";
+                LblMsg.Text = "Congratulation " + txtFname.Text + " on starting your new chapter of life!";
+            }
+            catch (SqlException error)
+            {
+                if (error.Number == 2627)
+                    LblMsg.Text = "The username " + txtusername.Text + " is already used!";
+                else
+                    LblMsg.Text = "Sorry DataBase problem! Try later.";
+            }
+            catch
+            {
+                LblMsg.Text = "Sorry, System Not Available, Try later.";
+            }
         }
     }
 }

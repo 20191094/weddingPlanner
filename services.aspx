@@ -142,7 +142,7 @@
                             <span class="auto-style14">we help you find the nearest and suitable hall for you.<br />
                             <br />
                             </span>
-                            <asp:Button style= "background-color:#660033" ID="Button2" runat="server" BorderColor="#660033" BorderStyle="Ridge" Font-Names="Georgia" Text="Learn More!" ForeColor="White" />
+                            <asp:Button style= "background-color:#660033" ID="Button2" runat="server" BorderColor="#660033" BorderStyle="Ridge" Font-Names="Georgia" Text="Learn More!" ForeColor="White" OnClick="Button2_Click" PostBackUrl="~/Hall.aspx" />
                             <br />
                         </td>
                         <td class="auto-style25">

@@ -16,8 +16,13 @@ namespace weddingPlanner
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            // Response.Redirect("weddingStyle.aspx");
-            Server.Transfer("weddungStyle.aspx");
+             Response.Redirect("weddingStyle.aspx");
+            //Server.Transfer("weddungStyle.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            //Response.Redirect("weddingStyle.aspx");
         }
     }
 }

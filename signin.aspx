@@ -163,9 +163,11 @@
                     <td>
                         &nbsp;</td>
                     <td>
-                    <asp:Button ID="Button1" runat="server" BorderColor="#000066" Font-Names="Arial Black" Font-Size="Medium" ForeColor="Black" Text="SignIn" />
+                    <asp:Button ID="btnsignin" runat="server" BorderColor="#000066" Font-Names="Arial Black" Font-Size="Medium" ForeColor="Black" Text="SignIn" OnClick="btnsignin_Click" />
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Label ID="Lblmsg" runat="server"></asp:Label>
+                    </td>
                     <td>&nbsp;</td>
                     <td class="auto-style11">&nbsp;</td>
                 </tr>
