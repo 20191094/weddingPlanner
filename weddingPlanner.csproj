@@ -79,16 +79,21 @@
     <Content Include="Images\2.jpg" />
     <Content Include="Images\4.jpg" />
     <Content Include="Images\5.jpg" />
+    <Content Include="Images\beach.jpg" />
+    <Content Include="Images\boho.jpg" />
     <Content Include="Images\buffet.jpg" />
     <Content Include="Images\cake.jpg" />
+    <Content Include="Images\classic.jpg" />
     <Content Include="Images\dress.jpg" />
     <Content Include="Images\face.jpg" />
+    <Content Include="Images\garden.jpg" />
     <Content Include="Images\guest.jpg" />
     <Content Include="Images\insta.jpg" />
     <Content Include="Images\invitation.jpg" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Images\logo2.jpg" />
     <Content Include="Images\makeup.jpg" />
+    <Content Include="Images\modern.jpg" />
     <Content Include="Images\music.jpg" />
     <Content Include="Images\photographer.jpg" />
     <Content Include="Images\snap.jpg" />
@@ -114,12 +119,14 @@
     <Content Include="Images\wedlogo.jpg" />
     <Content Include="Images\wedlogo4.jpg" />
     <Content Include="Images\wedStyle.jpg" />
+    <Content Include="Images\wedstyle1.jpg" />
     <Content Include="index.html" />
     <Content Include="invitation.aspx" />
     <Content Include="main.aspx" />
     <Content Include="services.aspx" />
     <Content Include="signin.aspx" />
     <Content Include="signup.aspx" />
+    <Content Include="start.aspx" />
     <Content Include="Web.config" />
     <Content Include="weddingStyle.aspx" />
   </ItemGroup>
@@ -180,6 +187,13 @@
     </Compile>
     <Compile Include="signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="start.aspx.cs">
+      <DependentUpon>start.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="start.aspx.designer.cs">
+      <DependentUpon>start.aspx</DependentUpon>
     </Compile>
     <Compile Include="weddingStyle.aspx.cs">
       <DependentUpon>weddingStyle.aspx</DependentUpon>
