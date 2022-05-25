@@ -36,8 +36,7 @@ namespace wedding_planner
                 HttpCookie cookies = new HttpCookie("userInfo");
                 cookies.Values.Add("usern", txtusername.Text);
                 cookies.Values.Add("passw", txtpassword.Text);
-                cookies.Values.Add("Fn", Fname);
-                cookies.Values.Add("ln", Lname);
+              
                 cookies.Expires = DateTime.Now.AddDays(3);
                 Response.Cookies.Add(cookies);
 
