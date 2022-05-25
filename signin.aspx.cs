@@ -32,7 +32,23 @@ namespace wedding_planner
             //execute the select command
             read = cmdSelect.ExecuteReader();
             if (read.Read())
-                Response.Redirect("services.aspx");
+            {
+                HttpCookie cookies = new HttpCookie("userInfo");
+                cookies.Values.Add("usern", txtusername.Text);
+                cookies.Values.Add("passw", txtpassword.Text);
+                cookies.Values.Add("Fn", Fname);
+                cookies.Values.Add("ln", Lname);
+                cookies.Expires = DateTime.Now.AddDays(3);
+                Response.Cookies.Add(cookies);
+
+                if (txtusername.Text == "admin2022")
+                    Response.Redirect("adminHome.aspx");
+                else
+                    Response.Redirect("services.aspx");
+            }
+
+           
+            
             else
                 Lblmsg.Text = "Incorrect UserName or Password, Please Try again!";
             //colse database
